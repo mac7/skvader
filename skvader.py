@@ -7,15 +7,17 @@ import utils
 
 
 def main(argv):
-	div = '#'*76
+	div = '_'*76
 	print '%s\n%s\n%s' % (div, utils.pingpong(argv[0]).rstrip(), div)
 
 
 
 if __name__ == '__main__':
 	try:
-	    	main(sys.argv[1:])
+		print 'Please wait...'
+		main(sys.argv[1:])
 	except:
 		print """
-		Use "skvader.py -host"
+		Usage:   
+                skvader.py -host
 """
