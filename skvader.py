@@ -17,5 +17,6 @@ if __name__ == '__main__':
 	    	main(sys.argv[1:])
 	except:
 		print """
-		Use "skvader.py -host"
+		Usage:   
+                skvader.py -host
 """
