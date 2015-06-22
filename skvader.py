@@ -7,7 +7,7 @@ import utils
 
 
 def main(argv):
-	div = '#'*76
+	div = '_'*76
 	print '%s\n%s\n%s' % (div, utils.pingpong(argv[0]).rstrip(), div)
 
 
