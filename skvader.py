@@ -14,10 +14,10 @@ def main(argv):
 
 if __name__ == '__main__':
 	try:
-            print 'Please wait...'
-	    	main(sys.argv[1:])
+		print 'Please wait...'
+		main(sys.argv[1:])
 	except:
 		print """
 		Usage:   
-                    skvader.py -host
+                skvader.py -host
 """
