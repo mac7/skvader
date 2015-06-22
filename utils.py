@@ -14,6 +14,7 @@ def pingpong(host):
 	    				stderr = subprocess.PIPE
 					)
 		out, error = ping.communicate()
+		return out[out.find('---'):]
 	else:
 		ping = subprocess.Popen(
 	    				["ping", "-n", "10", host],
@@ -21,4 +22,5 @@ def pingpong(host):
 	    				stderr = subprocess.PIPE
 					)
 		out, error = ping.communicate()
-	return out[out.find('---'):]	
+        return out[out.find('Ping statistics'):]
+
