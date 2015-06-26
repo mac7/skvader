@@ -6,6 +6,8 @@ def pingpong(host):
     """
 
     """
+    print 'Please wait...'
+
     if host == 'leo':
         host = '192.168.248.103'
     elif host == 'r2d2':
