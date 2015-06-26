@@ -14,10 +14,9 @@ def main(argv):
 
 
 if __name__ == '__main__':
-#	try:
+	try:
 		main(sys.argv[1:])
-#	except:
-#		print """
-#		Usage:
-#                skvader.py -host
-#"""
+	except:
+		print """
+		Usage:
+		        skvader.py -host """

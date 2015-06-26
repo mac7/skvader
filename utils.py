@@ -15,7 +15,7 @@ def pingpong(host):
 
     if platform.system() == 'Linux':
         ping = subprocess.Popen(
-            ["ping", "-A", "-c", "10", host],
+            ["ping", "-A", "-c", "50", host],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE
         )
@@ -31,7 +31,7 @@ def pingpong(host):
     else:
         for foo in [64, 782, 1500]:
             ping = subprocess.Popen(
-                ["ping", "-l", str(foo), "-n", "10", host],
+                ["ping", "-l", str(foo), "-n", "50", host],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE
             )
