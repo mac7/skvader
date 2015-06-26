@@ -48,11 +48,7 @@ def pingpong(host):
                 statistic.append(rttAvg)
                 statistic.append(jitter)
 
-                print statistic
             else:
                 for i in range(0, 5):
-                    statistic.append('host unreachable')
-                print statistic
-
-    print 'pong is done'
+                    statistic.append('0')
     return statistic
