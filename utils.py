@@ -31,6 +31,7 @@ def pingpong(host):
         return [64, loss, rttMin, rttAvg, rttMax, jitter]
 
     else:
+        cnt = 1
         for foo in [64, 782, 1500]:
             ping = subprocess.Popen(
                 ["ping", "-l", str(foo), "-n", "50", host],
@@ -53,5 +54,7 @@ def pingpong(host):
             else:
                 for i in range(0, 5):
                     statistic.append('0')
+            print cnt, 'stage done...'
+            cnt += 1
 
     return statistic
