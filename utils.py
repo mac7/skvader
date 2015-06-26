@@ -53,4 +53,5 @@ def pingpong(host):
             else:
                 for i in range(0, 5):
                     statistic.append('0')
+
     return statistic
